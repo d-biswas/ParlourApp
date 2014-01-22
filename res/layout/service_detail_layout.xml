@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" android:background="@drawable/background">
+  		
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/header"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:background="@layout/header_gradient" 
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip">
+  				<!-- Logo Start-->
+  				<ImageView android:src="@drawable/logo"
+  							android:layout_width="50dp"
+  							android:layout_height="50dp"
+  							android:layout_marginLeft="10dip"
+  							android:contentDescription="@string/logo_str"/>
+  				<!-- Logo Ends -->
+  				
+  				<TextView android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:text="@string/service_page_header"
+		  		android:singleLine="true"
+		  		android:layout_gravity="center|left"
+		  		android:layout_marginLeft="10dip"
+		  		android:textSize="22sp"
+		  		android:textColor="#FEFEFE"/>
+  					
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+  		
+  		<!-- Service content -->
+		<LinearLayout
+		  android:orientation="vertical"   
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/header">
+		  
+		  		<TextView 
+		  		    android:id="@+id/serviceTitle"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:singleLine="true"
+			  		android:text="@string/service_title"
+			  		android:textSize="24sp"
+			  		android:textColor="#777777"
+			  		android:layout_marginBottom="10dp"
+			  		android:padding="10dp"/>
+		  		
+		  		<ViewFlipper android:id="@+id/flipper" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"/> 
+
+		  		
+		  		<!--  ImageView
+		  		    android:id="@+id/serviceImage" 
+		            android:src="@drawable/hair_styling1"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:contentDescription="@string/str_hair1"
+		            android:layout_gravity="center_horizontal"
+		            android:layout_marginBottom="10dp"
+			  		android:padding="10dp"/-->
+		  		
+		  		
+		  		<TextView 
+		  		    android:id="@+id/serviceDescription"
+		  		    android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:text="@string/service_desc"
+		  		    android:textColor="#333333"
+		  		    android:textSize="16sp"
+		  		    android:padding="10dp"/>
+		  		
+		  		<TextView 
+		  		    android:id="@+id/servicePrice"
+		  		    android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:text="@string/service_price"
+		  		    android:textColor="#333333"
+		  		    android:textSize="16sp"
+		  		    android:padding="10dp"/>
+		  		
+		  		<TextView 
+		  		    android:id="@+id/serviceDuration"
+		  		    android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:text="@string/service_duration"
+		  		    android:textColor="#333333"
+		  		    android:textSize="16sp"
+		  		    android:padding="10dp"/>
+		  		
+		  		<TextView 
+		  		    android:id="@+id/serviceNote"
+		  		    android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:text="@string/service_note"
+		  		    android:textColor="#333333"
+		  		    android:textSize="16sp"
+		  		    android:padding="10dp"/>
+		  		
+				  		 				  		
+		</LinearLayout>
+  		<!-- service content Ends --> 		
+  		
+  </RelativeLayout>
+</ScrollView>

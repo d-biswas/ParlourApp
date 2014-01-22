@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" android:background="@drawable/background">
+  		
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/header"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:background="@layout/header_gradient" 
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip">
+  				<!-- Logo Start-->
+  				<ImageView android:src="@drawable/logo"
+  							android:layout_width="50dp"
+  							android:layout_height="50dp"
+  							android:layout_marginLeft="10dip"/>
+  				<!-- Logo Ends -->
+  				
+  				<TextView android:id="@+id/pageTitle"
+  				android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:text="Category of services"
+		  		android:singleLine="true"
+		  		android:layout_gravity="center|left"
+		  		android:layout_marginLeft="10dip"
+		  		android:textSize="22dip"
+		  		android:textColor="#FEFEFE"/>
+		  		
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+  		
+  		<!-- content -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:orientation="vertical"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:layout_below="@id/header">
+		  
+		  <ListView
+	        android:id="@+id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@android:color/transparent"
+	        android:dividerHeight="5dp"
+	        android:listSelector="@drawable/list_selector" />
+		  
+				  		 				  		
+		</LinearLayout>
+  		<!-- content Ends --> 		
+  		
+  </RelativeLayout>
+</ScrollView>

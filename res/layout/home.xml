@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" android:background="@drawable/background">
+  		
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/header"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:background="@layout/header_gradient" 
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip">
+  				<!-- Logo Start-->
+  				<ImageView android:src="@drawable/logo"
+  							android:layout_width="50dp"
+  							android:layout_height="50dp"
+  							android:layout_marginLeft="10dip"/>
+  				<!-- Logo Ends -->
+  				
+  				<TextView android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:text="Skin care center"
+		  		android:singleLine="true"
+		  		android:layout_gravity="center|left"
+		  		android:layout_marginLeft="10dip"
+		  		android:textSize="22dip"
+		  		android:textColor="#FEFEFE"/>
+  				
+  				<!-- Logout button layout-->	
+  				<RelativeLayout 
+  					android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:layout_gravity="center_vertical">
+			  			
+					  	<Button android:id="@+id/btnLogin" 
+					  		android:layout_width="wrap_content"
+					  		android:layout_height="wrap_content"
+					  		android:text="Login"
+					  		android:textColor="#426098"
+					  		android:textSize="10dip"
+					  		android:layout_marginRight="10dip"
+					  		android:background="@drawable/logout_button"
+					  		android:layout_alignParentRight="true"
+					  		android:gravity="left|center_vertical"
+					  		android:visibility="visible"/>
+					  							  		
+					  	<Button android:id="@+id/btnLogout" 
+					  		android:layout_width="wrap_content"
+					  		android:layout_height="wrap_content"
+					  		android:text="Logout"
+					  		android:textColor="#426098"
+					  		android:textSize="10dip"
+					  		android:layout_marginRight="10dip"
+					  		android:background="@drawable/logout_button"
+					  		android:layout_alignParentRight="true"
+					  		android:gravity="left|center_vertical"
+					  		android:visibility="gone"/>	
+		  		
+		  		</RelativeLayout>
+		  		<!-- Logout button layout ends-->
+		  		
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+  		
+  		<!-- Home content -->
+		<LinearLayout 
+		  android:orientation="vertical"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:layout_below="@id/header">
+		  
+		  		<TextView android:id="@+id/loginStatus"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:singleLine="true"
+			  		android:textSize="12sp"
+			  		android:textColor="#777777"/>
+		  
+				<Button android:id="@+id/btnBookOnline" 
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:text="Booking online"
+			  		android:singleLine="true"
+			  		android:background="@drawable/button"
+			  		android:layout_marginTop="5dip"
+			  		android:textSize="24sp"
+			  		android:gravity="left|center_vertical"
+			  		android:drawableRight="@drawable/rightarrow"/>
+			  		
+			  	<Button android:id="@+id/btnServicesCategory" 
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:text="Category of services"
+			  		android:singleLine="true"
+			  		android:background="@drawable/button"
+			  		android:layout_marginTop="5dip"
+			  		android:textSize="24sp"
+			  		android:gravity="left|center_vertical"
+			  		android:drawableRight="@drawable/rightarrow"/>	
+			  		
+			  	<Button android:id="@+id/btnSpecials" 
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:text="Specials"
+			  		android:singleLine="true"
+			  		android:background="@drawable/button"
+			  		android:layout_marginTop="5dip"
+			  		android:textSize="24sp"
+			  		android:gravity="left|center_vertical"
+			  		android:drawableRight="@drawable/rightarrow"/>
+			  		
+			  	<Button android:id="@+id/btnLocation" 
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:text="Location"
+			  		android:singleLine="true"
+			  		android:background="@drawable/button"
+			  		android:layout_marginTop="5dip"
+			  		android:textSize="24sp"
+			  		android:gravity="left|center_vertical"
+			  		android:drawableRight="@drawable/rightarrow"/>	
+			  		
+			  	<Button android:id="@+id/btnContactUs" 
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:text="About us"
+			  		android:singleLine="true"
+			  		android:background="@drawable/button"
+			  		android:layout_marginTop="5dip"
+			  		android:textSize="24sp"
+			  		android:gravity="left|center_vertical"
+			  		android:drawableRight="@drawable/rightarrow"/>		
+				  		 				  		
+		</LinearLayout>
+  		<!-- Home content Ends --> 		
+  		
+  </RelativeLayout>
+</ScrollView>

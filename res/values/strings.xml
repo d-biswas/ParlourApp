@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeautyParlour</string>
+    <string name="str_hair1">Girls hair styling</string>
+    <string name="logo_str">Logo</string>
+    <string name="service_page_header">Service details</string>
+    <string name="service_title">Hair styling for girls</string>
+    <string name="service_desc">Description: Service dummmy desc. Service dummy desc. Service dummy desc. dummy desc. dummy desc, dummy desc dummy desc dummy desc</string>
+    <string name="service_price">Price: 20$</string>
+    <string name="service_duration">Duration: 1.5 hr(s)</string>
+    <string name="service_note">Note: service note. service note, service note, service note</string>
+
+</resources>
