@@ -49,15 +49,10 @@ public class ListAdapter extends BaseAdapter {
 	}
 
 	public Object getItem(int position) {
-//		if(getCount()>0){
-//			return itemList.get(position);
-//		}
-//		return null;
 		return position;
 	}
 
 	public long getItemId(int position) {
-//		return itemList.indexOf(getItem(position));
 		return position;
 	}
 

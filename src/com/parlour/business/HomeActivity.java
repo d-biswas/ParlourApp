@@ -141,24 +141,7 @@ public class HomeActivity extends BaseActivity implements OnClickListener, Serve
 		}
 		else if(v.getId() == R.id.btnSpecials) {
 			Intent intent = new Intent(getApplicationContext(), SpecialsActivity.class);
-//			intent.putExtra("jsonString", (String)response.getData());
 			startActivity(intent);
-//			handler.post(new Runnable() {						
-//				public void run() {
-//					progDialog = ProgressDialog.show(HomeActivity.this, "Please Wait.", "Fetching...", true, false);							
-//				}
-//			});
-			
-//			String serverURL = "http://10.0.2.2:8080/webservice/category/getAllCategories";
-//			String serverURL = "http://10.0.2.2:8080/webservice/product/saveOrUpdate";
-//			Hashtable<String, String> params = new Hashtable<String, String>();
-//			params.put("productName", "HairStyle");
-//			params.put("productDescription", "Hair style description");
-//			params.put("productNote", "Hair style note");
-//			params.put("status", "true");
-//			params.put("noOfTimeSlot", "3");
-//			params.put("categoryID", "7");
-//			new ServerConnector(this, serverURL, ServerConnector.HTTP_GET_METHOD, null).connect();
 			
 		}
 		else if(v.getId() == R.id.btnLocation) {
@@ -226,7 +209,6 @@ public class HomeActivity extends BaseActivity implements OnClickListener, Serve
 				}
 					
 				HashMap<String, List<ResultItem>> map = new HashMap<String, List<ResultItem>>();
-//				map.put("itemList", DataCollector.getAllCategoryItems());
 				map.put("itemList", resultList);
 				Intent intent = new Intent(getApplicationContext(), ServicesCategoryListActivity.class);
 				intent.putExtra("map", map);

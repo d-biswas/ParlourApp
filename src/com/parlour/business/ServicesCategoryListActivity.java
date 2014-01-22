@@ -88,28 +88,6 @@ public class ServicesCategoryListActivity extends BaseActivity implements OnItem
     		
     		
     	}
-//    	else if(resultItem.getItemType() == ResultItem.SUBCATEGORY_TYPE) {
-//    		
-//    		handler.post(new Runnable() {						
-//				public void run() {
-//					progDialog = ProgressDialog.show(ServicesCategoryListActivity.this, "Please Wait.", "Fetching categories...", true, false);							
-//				}
-//			});
-//    		String serverURL = "http://trinayanapps.com/webservice/category/getAllSubCategoriesAndServices";
-//			StringBuilder URLBuilder = new StringBuilder(serverURL);
-//			URLBuilder.append("?categoryID=").append( ((Category)resultItem.getItem()).getCategoryId() );
-//			
-//			new ServerConnector(this, GET_SERVICES_ID, URLBuilder.toString(), ServerConnector.HTTP_GET_METHOD, null).connect();
-//    		
-//    		HashMap<String, List<ResultItem>> map = new HashMap<String, List<ResultItem>>();
-//			map.put("itemList", DataCollector.getAllServices(((Category)resultItem.getItem()).getCategoryId()));
-//			Intent intent = new Intent(getApplicationContext(), ServicesCategoryListActivity.class);
-//			intent.putExtra("map", map);
-//			String itemTitle = ((Category)resultItem.getItem()).getCategoryName();
-//			intent.putExtra("itemName", itemTitle);
-//			
-//			startActivity(intent);
-//    	}
     	else if(resultItem.getItemType() == ResultItem.SERVICE_TYPE) {
     		handler.post(new Runnable() {						
 				public void run() {
@@ -179,7 +157,6 @@ public class ServicesCategoryListActivity extends BaseActivity implements OnItem
 				}
 					
 				HashMap<String, List<ResultItem>> map = new HashMap<String, List<ResultItem>>();
-//				map.put("itemList", DataCollector.getAllSubCategoriesAndServices(((Category)obj.getItem()).getCategoryId()));
 				map.put("itemList", resultList);
 				Intent intent = new Intent(getApplicationContext(), ServicesCategoryListActivity.class);
 				intent.putExtra("map", map);
@@ -197,14 +174,8 @@ public class ServicesCategoryListActivity extends BaseActivity implements OnItem
 					}
 				}catch (JSONException e) {
 					e.printStackTrace();
-				}
-				
-				
+				}								
 				Intent intent = new Intent(getApplicationContext(), ServiceDetailActivity.class);
-
-	    		// Collecting all images of this service and set as images
-//	    		List<ServiceImage> imageList = DataCollector.getAllServiceImages(service.getServiceId());
-//	    		service.setServiceImages(imageList);
 	    		intent.putExtra("service", service);
 	    		startActivity(intent);
 				

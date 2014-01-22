@@ -35,12 +35,6 @@ public class Category implements Serializable{
 		if(jsonObject.has(JsonKey.NAME) && !jsonObject.isNull(JsonKey.NAME)) {
 			this.categoryName = jsonObject.getString(JsonKey.NAME);
 		}
-//		if(jsonObject.has(JsonKey.DESCRIPTION) && jsonObject.getString(JsonKey.DESCRIPTION) != null) {
-//			this.categoryDesc = jsonObject.getString(JsonKey.DESCRIPTION);
-//		}
-//		if(jsonObject.has(JsonKey.PARENT_ID)) {
-//			this.parentCategoryId = jsonObject.getInt(JsonKey.PARENT_ID);
-//		}
 		if(jsonObject.has(JsonKey.NOTES) && !jsonObject.isNull(JsonKey.NOTES)){
 			this.notes = jsonObject.getString(JsonKey.NOTES);
 		}		
